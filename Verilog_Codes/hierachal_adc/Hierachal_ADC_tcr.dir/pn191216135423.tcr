@@ -1,0 +1,58 @@
+#Start recording tcl command: 12/16/2019 11:22:55
+#Project Location: C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc; Project name: Hierachal_ADC
+prj_project open "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/Hierachal_ADC.ldf"
+prj_src exclude "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/MAX11046_module2.v"
+prj_run Synthesis -impl impl1_hie_adc
+prj_run Synthesis -impl impl1_hie_adc
+prj_src add "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/plm/plm.spf"
+prj_run Synthesis -impl impl1_hie_adc -forceAll
+prj_run Synthesis -impl impl1_hie_adc
+prj_src add "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/Memory_SDR.ipx"
+prj_src exclude "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/Memory_Shift.ipx"
+prj_src add "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/MAX11046_module4.v"
+prj_run Synthesis -impl impl1_hie_adc -task Lattice_Synthesis
+prj_run Synthesis -impl impl1_hie_adc
+prj_run Synthesis -impl impl1_hie_adc
+prj_run Synthesis -impl impl1_hie_adc -task Lattice_Synthesis
+prj_run Synthesis -impl impl1_hie_adc -task Lattice_Synthesis
+prj_run Synthesis -impl impl1_hie_adc -forceAll
+prj_run Synthesis -impl impl1_hie_adc
+prj_run Synthesis -impl impl1_hie_adc
+prj_run Synthesis -impl impl1_hie_adc -task Lattice_Synthesis
+prj_run Synthesis -impl impl1_hie_adc
+prj_run Synthesis -impl impl1_hie_adc -forceAll
+prj_run Synthesis -impl impl1_hie_adc -task Lattice_Synthesis
+prj_src enable "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/Memory_Shift.ipx"
+prj_run Synthesis -impl impl1_hie_adc -task Lattice_Synthesis
+prj_src enable "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/MAX11046_module2.v"
+prj_run Synthesis -impl impl1_hie_adc -task Lattice_Synthesis
+prj_src exclude "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/MAX11046_module4.v"
+prj_run Synthesis -impl impl1_hie_adc
+source "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/hdle_generate_Symbol.tcl"
+prj_run Synthesis -impl impl1_hie_adc -task Lattice_Synthesis
+prj_run Synthesis -impl impl1_hie_adc -task Lattice_Synthesis
+prj_run Synthesis -impl impl1_hie_adc
+prj_run Synthesis -impl impl1_hie_adc
+prj_run Synthesis -impl impl1_hie_adc -forceAll
+prj_run Synthesis -impl impl1_hie_adc
+prj_src exclude "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/MAX11046_module2.v"
+prj_run Synthesis -impl impl1_hie_adc
+prj_run Synthesis -impl impl1_hie_adc
+prj_src add "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/gfx/gfx.spf"
+prj_run Synthesis -impl impl1_hie_adc
+prj_run Synthesis -impl impl1_hie_adc
+prj_run Synthesis -impl impl1_hie_adc
+prj_run Synthesis -impl impl1_hie_adc
+prj_run Synthesis -impl impl1_hie_adc -forceAll
+prj_run Synthesis -impl impl1_hie_adc
+prj_run Synthesis -impl impl1_hie_adc -forceAll
+prj_run Synthesis -impl impl1_hie_adc
+prj_src add "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/tshdsf/tshdsf.spf"
+prj_run Synthesis -impl impl1_hie_adc
+prj_run Synthesis -impl impl1_hie_adc -forceAll
+prj_src add "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/uhbg/uhbg.spf"
+prj_src add "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/cgt/cgt.spf"
+prj_src add "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/ijn/ijn.spf"
+prj_project save
+prj_project close
+#Stop recording: 12/16/2019 13:54:23

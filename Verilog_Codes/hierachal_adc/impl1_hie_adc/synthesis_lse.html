@@ -1,0 +1,294 @@
+<HTML>
+<HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 3.11.1.441
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Dec 17 11:22:52 2019
+
+
+Command Line:  synthesis -f Hierachal_ADC_impl1_hie_adc_lattice.synproj -gui -msgset C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/promote.xml 
+
+Synthesis options:
+The -a option is MachXO3LF.
+The -s option is 6.
+The -t option is CABGA256.
+The -d option is LCMXO3LF-6900C.
+Using package CABGA256.
+Using performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO3LF
+
+### Device  : LCMXO3LF-6900C
+
+### Package : CABGA256
+
+### Speed   : 6
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = top.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc (searchpath added)
+-p C:/lscc/diamond/3.11_x64/ispfpga/xo3c00f/data (searchpath added)
+-p C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/impl1_hie_adc (searchpath added)
+-p C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc (searchpath added)
+Verilog design file = C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/ADC_top.v
+Verilog design file = C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/MAX11046_module1.v
+Verilog design file = C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/MAX11046_module5.v
+Verilog design file = C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/clocky.v
+NGD file = Hierachal_ADC_impl1_hie_adc.ngd
+-sdc option: SDC file input is C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/MAX11046_module5.ldc.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/users/inholland/desktop/elwin/diamond/projects/hierachal_adc/adc_top.v. VERI-1482
+Analyzing Verilog file c:/users/inholland/desktop/elwin/diamond/projects/hierachal_adc/max11046_module1.v. VERI-1482
+Analyzing Verilog file c:/users/inholland/desktop/elwin/diamond/projects/hierachal_adc/max11046_module5.v. VERI-1482
+Analyzing Verilog file c:/users/inholland/desktop/elwin/diamond/projects/hierachal_adc/clocky.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v. VERI-1482
+Top module name (Verilog): top
+INFO - synthesis: c:/users/inholland/desktop/elwin/diamond/projects/hierachal_adc/adc_top.v(1): compiling module top. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1759): compiling module OSCH(NOM_FREQ="133.00"). VERI-1018
+INFO - synthesis: c:/users/inholland/desktop/elwin/diamond/projects/hierachal_adc/max11046_module1.v(1): compiling module MAX11046_module1. VERI-1018
+WARNING - synthesis: c:/users/inholland/desktop/elwin/diamond/projects/hierachal_adc/max11046_module1.v(80): Register chip_sel_10 is stuck at One. VDB-5014
+INFO - synthesis: c:/users/inholland/desktop/elwin/diamond/projects/hierachal_adc/max11046_module5.v(2): compiling module MAX11046_module5. VERI-1018
+WARNING - synthesis: c:/users/inholland/desktop/elwin/diamond/projects/hierachal_adc/max11046_module5.v(18): expression size 2 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/inholland/desktop/elwin/diamond/projects/hierachal_adc/max11046_module5.v(18): using initial value of serdes_factor since it is never assigned. VERI-1220
+WARNING - synthesis: c:/users/inholland/desktop/elwin/diamond/projects/hierachal_adc/max11046_module5.v(41): expression size 23 truncated to fit in target size 16. VERI-1209
+WARNING - synthesis: c:/users/inholland/desktop/elwin/diamond/projects/hierachal_adc/max11046_module5.v(42): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: c:/users/inholland/desktop/elwin/diamond/projects/hierachal_adc/adc_top.v(22): net CLKI does not have a driver. VDB-1002
+Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo3c6900.nph' in environment: C:/lscc/diamond/3.11_x64/ispfpga.
+Package Status:                     Final          Version 1.16.
+WARNING - synthesis: There are no design constraints in the file C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/MAX11046_module5.ldc
+Top-level module name = top.
+WARNING - synthesis: Initial value found on net pwr will be ignored due to unrecognized driver type
+WARNING - synthesis: There are no design constraints in the file C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/MAX11046_module5.ldc
+WARNING - synthesis: I/O Port WR 's net has no driver and is unused.
+######## Missing driver on net WR. Patching with GND.
+######## Missing driver on net SHDN. Patching with GND.
+######## Missing driver on net CLKI. Patching with GND.
+WARNING - synthesis: Bit 0 of Register \u5/count_ps is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u5/count_ps is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \u5/count_ps is stuck at Zero
+WARNING - synthesis: c:/users/inholland/desktop/elwin/diamond/projects/hierachal_adc/max11046_module5.v(45): Register \u5/serial_data_out_20 clock is stuck at Zero. VDB-5035
+WARNING - synthesis: Bit 0 of Register \u5/sft_reg is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u5/sft_reg is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \u5/sft_reg is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \u5/sft_reg is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \u5/sft_reg is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \u5/sft_reg is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \u5/sft_reg is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \u5/sft_reg is stuck at Zero
+WARNING - synthesis: Bit 8 of Register \u5/sft_reg is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \u5/sft_reg is stuck at Zero
+WARNING - synthesis: Bit 10 of Register \u5/sft_reg is stuck at Zero
+WARNING - synthesis: Bit 11 of Register \u5/sft_reg is stuck at Zero
+WARNING - synthesis: Bit 12 of Register \u5/sft_reg is stuck at Zero
+WARNING - synthesis: Bit 13 of Register \u5/sft_reg is stuck at Zero
+WARNING - synthesis: Bit 14 of Register \u5/sft_reg is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \u5/sft_reg is stuck at Zero
+
+
+
+WARNING - synthesis: I/O Port CONVST 's net has no driver and is unused.
+WARNING - synthesis: I/O Port DB[15] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port DB[14] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port DB[13] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port DB[12] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port DB[11] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port DB[10] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port DB[9] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port DB[8] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port DB[7] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port DB[6] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port DB[5] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port DB[4] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port DB[3] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port DB[2] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port DB[1] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port DB[0] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port EOC 's net has no driver and is unused.
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+WARNING - synthesis: There are no design constraints in the file top_for_lpf.sdc
+Writing LPF file Hierachal_ADC_impl1_hie_adc.lpf.
+Results of NGD DRC are available in top_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+WARNING - synthesis: logical net 'DB[15]' has no load.
+WARNING - synthesis: input pad net 'DB[15]' has no legal load.
+WARNING - synthesis: logical net 'DB[14]' has no load.
+WARNING - synthesis: input pad net 'DB[14]' has no legal load.
+WARNING - synthesis: logical net 'DB[13]' has no load.
+WARNING - synthesis: input pad net 'DB[13]' has no legal load.
+WARNING - synthesis: logical net 'DB[12]' has no load.
+WARNING - synthesis: input pad net 'DB[12]' has no legal load.
+WARNING - synthesis: logical net 'DB[11]' has no load.
+WARNING - synthesis: input pad net 'DB[11]' has no legal load.
+WARNING - synthesis: logical net 'DB[10]' has no load.
+WARNING - synthesis: input pad net 'DB[10]' has no legal load.
+WARNING - synthesis: logical net 'DB[9]' has no load.
+WARNING - synthesis: input pad net 'DB[9]' has no legal load.
+WARNING - synthesis: logical net 'DB[8]' has no load.
+WARNING - synthesis: input pad net 'DB[8]' has no legal load.
+WARNING - synthesis: logical net 'DB[7]' has no load.
+WARNING - synthesis: input pad net 'DB[7]' has no legal load.
+WARNING - synthesis: logical net 'DB[6]' has no load.
+WARNING - synthesis: input pad net 'DB[6]' has no legal load.
+WARNING - synthesis: logical net 'DB[5]' has no load.
+WARNING - synthesis: input pad net 'DB[5]' has no legal load.
+WARNING - synthesis: logical net 'DB[4]' has no load.
+WARNING - synthesis: input pad net 'DB[4]' has no legal load.
+WARNING - synthesis: logical net 'DB[3]' has no load.
+WARNING - synthesis: input pad net 'DB[3]' has no legal load.
+WARNING - synthesis: logical net 'DB[2]' has no load.
+WARNING - synthesis: input pad net 'DB[2]' has no legal load.
+WARNING - synthesis: logical net 'DB[1]' has no load.
+WARNING - synthesis: input pad net 'DB[1]' has no legal load.
+WARNING - synthesis: logical net 'DB[0]' has no load.
+WARNING - synthesis: input pad net 'DB[0]' has no legal load.
+WARNING - synthesis: DRC complete with 32 warnings.
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file Hierachal_ADC_impl1_hie_adc.ngd.
+
+################### Begin Area Report (top)######################
+Number of register bits => 0 of 7485 (0 % )
+GSR => 1
+IB => 1
+OB => 6
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : CONVST_c_c, loads : 1
+  Net : SHDN, loads : 0
+  Net : WR, loads : 0
+  Net : force_n, loads : 0
+  Net : RD, loads : 0
+  Net : CS, loads : 0
+  Net : CONVST, loads : 0
+################### End Clock Report ##################
+
+Peak Memory Usage: 55.887  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.453  secs
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

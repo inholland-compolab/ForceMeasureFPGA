@@ -1,0 +1,35 @@
+SCUBA, Version Diamond (64-bit) 3.11.1.441
+Mon Dec 16 11:50:06 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+    Issued command   : C:\lscc\diamond\3.11_x64\ispfpga\bin\nt64\scuba.exe -w -n Memory_Shift -lang verilog -synth lse -bus_exp 7 -bb -arch xo3c00f -type shiftreg -width 16 -depth 16 -mode 0 -pipe_final_output 
+    Circuit name     : Memory_Shift
+    Module type      : shiftreg
+    Module Version   : 5.2
+    Ports            : 
+	Inputs       : Din[15:0], Clock, ClockEn, Reset
+	Outputs      : Q[15:0]
+    I/O buffer       : not inserted
+    EDIF output      : Memory_Shift.edn
+    Verilog output   : Memory_Shift.v
+    Verilog template : Memory_Shift_tmpl.v
+    Verilog testbench: tb_Memory_Shift_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : Memory_Shift.srp
+    Element Usage    :
+            CU2 : 2
+         FADD2B : 1
+        FD1P3DX : 20
+            INV : 1
+       ROM16X1A : 1
+       SPR16X4C : 4
+    Estimated Resource Usage:
+            LUT : 7
+           DRAM : 4
+            Reg : 20

@@ -1,0 +1,675 @@
+(edif Memory_Shift
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2019 12 16 11 50 6)
+      (program "SCUBA" (version "Diamond (64-bit) 3.11.1.441"))))
+      (comment "C:\lscc\diamond\3.11_x64\ispfpga\bin\nt64\scuba.exe -w -n Memory_Shift -lang verilog -synth lse -bus_exp 7 -bb -arch xo3c00f -type shiftreg -width 16 -depth 16 -mode 0 -pipe_final_output ")
+  (library ORCLIB
+    (edifLevel 0)
+    (technology
+      (numberDefinition))
+    (cell CU2
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port CI
+            (direction INPUT))
+          (port PC0
+            (direction INPUT))
+          (port PC1
+            (direction INPUT))
+          (port CO
+            (direction OUTPUT))
+          (port NC0
+            (direction OUTPUT))
+          (port NC1
+            (direction OUTPUT)))))
+    (cell FADD2B
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port A0
+            (direction INPUT))
+          (port A1
+            (direction INPUT))
+          (port B0
+            (direction INPUT))
+          (port B1
+            (direction INPUT))
+          (port CI
+            (direction INPUT))
+          (port COUT
+            (direction OUTPUT))
+          (port S0
+            (direction OUTPUT))
+          (port S1
+            (direction OUTPUT)))))
+    (cell FD1P3DX
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port D
+            (direction INPUT))
+          (port SP
+            (direction INPUT))
+          (port CK
+            (direction INPUT))
+          (port CD
+            (direction INPUT))
+          (port Q
+            (direction OUTPUT)))))
+    (cell INV
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port A
+            (direction INPUT))
+          (port Z
+            (direction OUTPUT)))))
+    (cell ROM16X1A
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port AD3
+            (direction INPUT))
+          (port AD2
+            (direction INPUT))
+          (port AD1
+            (direction INPUT))
+          (port AD0
+            (direction INPUT))
+          (port DO0
+            (direction OUTPUT)))))
+    (cell SPR16X4C
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port DI0
+            (direction INPUT))
+          (port DI1
+            (direction INPUT))
+          (port DI2
+            (direction INPUT))
+          (port DI3
+            (direction INPUT))
+          (port CK
+            (direction INPUT))
+          (port WRE
+            (direction INPUT))
+          (port AD0
+            (direction INPUT))
+          (port AD1
+            (direction INPUT))
+          (port AD2
+            (direction INPUT))
+          (port AD3
+            (direction INPUT))
+          (port DO0
+            (direction OUTPUT))
+          (port DO1
+            (direction OUTPUT))
+          (port DO2
+            (direction OUTPUT))
+          (port DO3
+            (direction OUTPUT)))))
+    (cell VHI
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port Z
+            (direction OUTPUT)))))
+    (cell VLO
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port Z
+            (direction OUTPUT)))))
+    (cell Memory_Shift
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port (array (rename Din "Din(15:0)") 16)
+            (direction INPUT))
+          (port Clock
+            (direction INPUT))
+          (port ClockEn
+            (direction INPUT))
+          (port Reset
+            (direction INPUT))
+          (port (array (rename Q "Q(15:0)") 16)
+            (direction OUTPUT)))
+        (property NGD_DRC_MASK (integer 1))
+        (contents
+          (instance INV_0
+            (viewRef view1 
+              (cellRef INV)))
+          (instance LUT4_0
+            (viewRef view1 
+              (cellRef ROM16X1A))
+            (property initval
+              (string "0x8000")))
+          (instance FF_19
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_18
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_17
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_16
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_15
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_14
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_13
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_12
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_11
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_10
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_9
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_8
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_7
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_6
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_5
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_4
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_3
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_2
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_1
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_0
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance scuba_vlo_inst
+            (viewRef view1 
+              (cellRef VLO)))
+          (instance scuba_vhi_inst
+            (viewRef view1 
+              (cellRef VHI)))
+          (instance sreg_0_ctr_1_cia
+            (viewRef view1 
+              (cellRef FADD2B)))
+          (instance sreg_0_ctr_1_0
+            (viewRef view1 
+              (cellRef CU2)))
+          (instance sreg_0_ctr_1_1
+            (viewRef view1 
+              (cellRef CU2)))
+          (instance sram_1_0_0
+            (viewRef view1 
+              (cellRef SPR16X4C))
+            (property MEM_INIT_FILE
+              (string "(0-15)(0-3)"))
+            (property MEM_LPC_FILE
+              (string "Memory_Shift.lpc"))
+            (property COMP
+              (string "sram_1_0_0"))
+            (property initval
+              (string "0x0000000000000000")))
+          (instance sram_1_0_1
+            (viewRef view1 
+              (cellRef SPR16X4C))
+            (property MEM_INIT_FILE
+              (string "(0-15)(4-7)"))
+            (property MEM_LPC_FILE
+              (string "Memory_Shift.lpc"))
+            (property COMP
+              (string "sram_1_0_1"))
+            (property initval
+              (string "0x0000000000000000")))
+          (instance sram_1_0_2
+            (viewRef view1 
+              (cellRef SPR16X4C))
+            (property MEM_INIT_FILE
+              (string "(0-15)(8-11)"))
+            (property MEM_LPC_FILE
+              (string "Memory_Shift.lpc"))
+            (property COMP
+              (string "sram_1_0_2"))
+            (property initval
+              (string "0x0000000000000000")))
+          (instance sram_1_0_3
+            (viewRef view1 
+              (cellRef SPR16X4C))
+            (property MEM_INIT_FILE
+              (string "(0-15)(12-15)"))
+            (property MEM_LPC_FILE
+              (string "Memory_Shift.lpc"))
+            (property COMP
+              (string "sram_1_0_3"))
+            (property initval
+              (string "0x0000000000000000")))
+          (net Reset_inv
+            (joined
+              (portRef AD3 (instanceRef LUT4_0))
+              (portRef Z (instanceRef INV_0))))
+          (net scuba_vlo
+            (joined
+              (portRef Z (instanceRef scuba_vlo_inst))
+              (portRef CI (instanceRef sreg_0_ctr_1_cia))
+              (portRef B0 (instanceRef sreg_0_ctr_1_cia))
+              (portRef A0 (instanceRef sreg_0_ctr_1_cia))))
+          (net scuba_vhi
+            (joined
+              (portRef Z (instanceRef scuba_vhi_inst))
+              (portRef AD0 (instanceRef LUT4_0))
+              (portRef AD1 (instanceRef LUT4_0))
+              (portRef B1 (instanceRef sreg_0_ctr_1_cia))
+              (portRef A1 (instanceRef sreg_0_ctr_1_cia))))
+          (net ishreg_addr_w0
+            (joined
+              (portRef NC0 (instanceRef sreg_0_ctr_1_0))
+              (portRef D (instanceRef FF_19))))
+          (net ishreg_addr_w1
+            (joined
+              (portRef NC1 (instanceRef sreg_0_ctr_1_0))
+              (portRef D (instanceRef FF_18))))
+          (net sreg_0_ctr_1_ci
+            (joined
+              (portRef CI (instanceRef sreg_0_ctr_1_0))
+              (portRef COUT (instanceRef sreg_0_ctr_1_cia))))
+          (net ishreg_addr_w2
+            (joined
+              (portRef NC0 (instanceRef sreg_0_ctr_1_1))
+              (portRef D (instanceRef FF_17))))
+          (net ishreg_addr_w3
+            (joined
+              (portRef NC1 (instanceRef sreg_0_ctr_1_1))
+              (portRef D (instanceRef FF_16))))
+          (net co1
+            (joined
+              (portRef CO (instanceRef sreg_0_ctr_1_1))))
+          (net co0
+            (joined
+              (portRef CI (instanceRef sreg_0_ctr_1_1))
+              (portRef CO (instanceRef sreg_0_ctr_1_0))))
+          (net Q15_ffin
+            (joined
+              (portRef DO3 (instanceRef sram_1_0_0))
+              (portRef D (instanceRef FF_15))))
+          (net Q14_ffin
+            (joined
+              (portRef DO2 (instanceRef sram_1_0_0))
+              (portRef D (instanceRef FF_14))))
+          (net Q13_ffin
+            (joined
+              (portRef DO1 (instanceRef sram_1_0_0))
+              (portRef D (instanceRef FF_13))))
+          (net Q12_ffin
+            (joined
+              (portRef DO0 (instanceRef sram_1_0_0))
+              (portRef D (instanceRef FF_12))))
+          (net Q11_ffin
+            (joined
+              (portRef DO3 (instanceRef sram_1_0_1))
+              (portRef D (instanceRef FF_11))))
+          (net Q10_ffin
+            (joined
+              (portRef DO2 (instanceRef sram_1_0_1))
+              (portRef D (instanceRef FF_10))))
+          (net Q9_ffin
+            (joined
+              (portRef DO1 (instanceRef sram_1_0_1))
+              (portRef D (instanceRef FF_9))))
+          (net Q8_ffin
+            (joined
+              (portRef DO0 (instanceRef sram_1_0_1))
+              (portRef D (instanceRef FF_8))))
+          (net Q7_ffin
+            (joined
+              (portRef DO3 (instanceRef sram_1_0_2))
+              (portRef D (instanceRef FF_7))))
+          (net Q6_ffin
+            (joined
+              (portRef DO2 (instanceRef sram_1_0_2))
+              (portRef D (instanceRef FF_6))))
+          (net Q5_ffin
+            (joined
+              (portRef DO1 (instanceRef sram_1_0_2))
+              (portRef D (instanceRef FF_5))))
+          (net Q4_ffin
+            (joined
+              (portRef DO0 (instanceRef sram_1_0_2))
+              (portRef D (instanceRef FF_4))))
+          (net Q3_ffin
+            (joined
+              (portRef DO3 (instanceRef sram_1_0_3))
+              (portRef D (instanceRef FF_3))))
+          (net Q2_ffin
+            (joined
+              (portRef DO2 (instanceRef sram_1_0_3))
+              (portRef D (instanceRef FF_2))))
+          (net Q1_ffin
+            (joined
+              (portRef DO1 (instanceRef sram_1_0_3))
+              (portRef D (instanceRef FF_1))))
+          (net Q0_ffin
+            (joined
+              (portRef DO0 (instanceRef sram_1_0_3))
+              (portRef D (instanceRef FF_0))))
+          (net dec0_wre3
+            (joined
+              (portRef WRE (instanceRef sram_1_0_3))
+              (portRef DO0 (instanceRef LUT4_0))
+              (portRef WRE (instanceRef sram_1_0_0))
+              (portRef WRE (instanceRef sram_1_0_1))
+              (portRef WRE (instanceRef sram_1_0_2))))
+          (net shreg_addr_w3
+            (joined
+              (portRef AD3 (instanceRef sram_1_0_3))
+              (portRef Q (instanceRef FF_16))
+              (portRef PC1 (instanceRef sreg_0_ctr_1_1))
+              (portRef AD3 (instanceRef sram_1_0_0))
+              (portRef AD3 (instanceRef sram_1_0_1))
+              (portRef AD3 (instanceRef sram_1_0_2))))
+          (net shreg_addr_w2
+            (joined
+              (portRef AD2 (instanceRef sram_1_0_3))
+              (portRef Q (instanceRef FF_17))
+              (portRef PC0 (instanceRef sreg_0_ctr_1_1))
+              (portRef AD2 (instanceRef sram_1_0_0))
+              (portRef AD2 (instanceRef sram_1_0_1))
+              (portRef AD2 (instanceRef sram_1_0_2))))
+          (net shreg_addr_w1
+            (joined
+              (portRef AD1 (instanceRef sram_1_0_3))
+              (portRef Q (instanceRef FF_18))
+              (portRef PC1 (instanceRef sreg_0_ctr_1_0))
+              (portRef AD1 (instanceRef sram_1_0_0))
+              (portRef AD1 (instanceRef sram_1_0_1))
+              (portRef AD1 (instanceRef sram_1_0_2))))
+          (net shreg_addr_w0
+            (joined
+              (portRef AD0 (instanceRef sram_1_0_3))
+              (portRef Q (instanceRef FF_19))
+              (portRef PC0 (instanceRef sreg_0_ctr_1_0))
+              (portRef AD0 (instanceRef sram_1_0_0))
+              (portRef AD0 (instanceRef sram_1_0_1))
+              (portRef AD0 (instanceRef sram_1_0_2))))
+          (net Q15
+            (joined
+              (portRef (member Q 0))
+              (portRef Q (instanceRef FF_15))))
+          (net Q14
+            (joined
+              (portRef (member Q 1))
+              (portRef Q (instanceRef FF_14))))
+          (net Q13
+            (joined
+              (portRef (member Q 2))
+              (portRef Q (instanceRef FF_13))))
+          (net Q12
+            (joined
+              (portRef (member Q 3))
+              (portRef Q (instanceRef FF_12))))
+          (net Q11
+            (joined
+              (portRef (member Q 4))
+              (portRef Q (instanceRef FF_11))))
+          (net Q10
+            (joined
+              (portRef (member Q 5))
+              (portRef Q (instanceRef FF_10))))
+          (net Q9
+            (joined
+              (portRef (member Q 6))
+              (portRef Q (instanceRef FF_9))))
+          (net Q8
+            (joined
+              (portRef (member Q 7))
+              (portRef Q (instanceRef FF_8))))
+          (net Q7
+            (joined
+              (portRef (member Q 8))
+              (portRef Q (instanceRef FF_7))))
+          (net Q6
+            (joined
+              (portRef (member Q 9))
+              (portRef Q (instanceRef FF_6))))
+          (net Q5
+            (joined
+              (portRef (member Q 10))
+              (portRef Q (instanceRef FF_5))))
+          (net Q4
+            (joined
+              (portRef (member Q 11))
+              (portRef Q (instanceRef FF_4))))
+          (net Q3
+            (joined
+              (portRef (member Q 12))
+              (portRef Q (instanceRef FF_3))))
+          (net Q2
+            (joined
+              (portRef (member Q 13))
+              (portRef Q (instanceRef FF_2))))
+          (net Q1
+            (joined
+              (portRef (member Q 14))
+              (portRef Q (instanceRef FF_1))))
+          (net Q0
+            (joined
+              (portRef (member Q 15))
+              (portRef Q (instanceRef FF_0))))
+          (net Reset
+            (joined
+              (portRef Reset)
+              (portRef A (instanceRef INV_0))
+              (portRef CD (instanceRef FF_19))
+              (portRef CD (instanceRef FF_18))
+              (portRef CD (instanceRef FF_17))
+              (portRef CD (instanceRef FF_16))
+              (portRef CD (instanceRef FF_15))
+              (portRef CD (instanceRef FF_14))
+              (portRef CD (instanceRef FF_13))
+              (portRef CD (instanceRef FF_12))
+              (portRef CD (instanceRef FF_11))
+              (portRef CD (instanceRef FF_10))
+              (portRef CD (instanceRef FF_9))
+              (portRef CD (instanceRef FF_8))
+              (portRef CD (instanceRef FF_7))
+              (portRef CD (instanceRef FF_6))
+              (portRef CD (instanceRef FF_5))
+              (portRef CD (instanceRef FF_4))
+              (portRef CD (instanceRef FF_3))
+              (portRef CD (instanceRef FF_2))
+              (portRef CD (instanceRef FF_1))
+              (portRef CD (instanceRef FF_0))))
+          (net ClockEn
+            (joined
+              (portRef ClockEn)
+              (portRef AD2 (instanceRef LUT4_0))
+              (portRef SP (instanceRef FF_19))
+              (portRef SP (instanceRef FF_18))
+              (portRef SP (instanceRef FF_17))
+              (portRef SP (instanceRef FF_16))
+              (portRef SP (instanceRef FF_15))
+              (portRef SP (instanceRef FF_14))
+              (portRef SP (instanceRef FF_13))
+              (portRef SP (instanceRef FF_12))
+              (portRef SP (instanceRef FF_11))
+              (portRef SP (instanceRef FF_10))
+              (portRef SP (instanceRef FF_9))
+              (portRef SP (instanceRef FF_8))
+              (portRef SP (instanceRef FF_7))
+              (portRef SP (instanceRef FF_6))
+              (portRef SP (instanceRef FF_5))
+              (portRef SP (instanceRef FF_4))
+              (portRef SP (instanceRef FF_3))
+              (portRef SP (instanceRef FF_2))
+              (portRef SP (instanceRef FF_1))
+              (portRef SP (instanceRef FF_0))))
+          (net Clock
+            (joined
+              (portRef Clock)
+              (portRef CK (instanceRef FF_19))
+              (portRef CK (instanceRef FF_18))
+              (portRef CK (instanceRef FF_17))
+              (portRef CK (instanceRef FF_16))
+              (portRef CK (instanceRef FF_15))
+              (portRef CK (instanceRef FF_14))
+              (portRef CK (instanceRef FF_13))
+              (portRef CK (instanceRef FF_12))
+              (portRef CK (instanceRef FF_11))
+              (portRef CK (instanceRef FF_10))
+              (portRef CK (instanceRef FF_9))
+              (portRef CK (instanceRef FF_8))
+              (portRef CK (instanceRef FF_7))
+              (portRef CK (instanceRef FF_6))
+              (portRef CK (instanceRef FF_5))
+              (portRef CK (instanceRef FF_4))
+              (portRef CK (instanceRef FF_3))
+              (portRef CK (instanceRef FF_2))
+              (portRef CK (instanceRef FF_1))
+              (portRef CK (instanceRef FF_0))
+              (portRef CK (instanceRef sram_1_0_0))
+              (portRef CK (instanceRef sram_1_0_1))
+              (portRef CK (instanceRef sram_1_0_2))
+              (portRef CK (instanceRef sram_1_0_3))))
+          (net Din15
+            (joined
+              (portRef (member Din 0))
+              (portRef DI3 (instanceRef sram_1_0_0))))
+          (net Din14
+            (joined
+              (portRef (member Din 1))
+              (portRef DI2 (instanceRef sram_1_0_0))))
+          (net Din13
+            (joined
+              (portRef (member Din 2))
+              (portRef DI1 (instanceRef sram_1_0_0))))
+          (net Din12
+            (joined
+              (portRef (member Din 3))
+              (portRef DI0 (instanceRef sram_1_0_0))))
+          (net Din11
+            (joined
+              (portRef (member Din 4))
+              (portRef DI3 (instanceRef sram_1_0_1))))
+          (net Din10
+            (joined
+              (portRef (member Din 5))
+              (portRef DI2 (instanceRef sram_1_0_1))))
+          (net Din9
+            (joined
+              (portRef (member Din 6))
+              (portRef DI1 (instanceRef sram_1_0_1))))
+          (net Din8
+            (joined
+              (portRef (member Din 7))
+              (portRef DI0 (instanceRef sram_1_0_1))))
+          (net Din7
+            (joined
+              (portRef (member Din 8))
+              (portRef DI3 (instanceRef sram_1_0_2))))
+          (net Din6
+            (joined
+              (portRef (member Din 9))
+              (portRef DI2 (instanceRef sram_1_0_2))))
+          (net Din5
+            (joined
+              (portRef (member Din 10))
+              (portRef DI1 (instanceRef sram_1_0_2))))
+          (net Din4
+            (joined
+              (portRef (member Din 11))
+              (portRef DI0 (instanceRef sram_1_0_2))))
+          (net Din3
+            (joined
+              (portRef (member Din 12))
+              (portRef DI3 (instanceRef sram_1_0_3))))
+          (net Din2
+            (joined
+              (portRef (member Din 13))
+              (portRef DI2 (instanceRef sram_1_0_3))))
+          (net Din1
+            (joined
+              (portRef (member Din 14))
+              (portRef DI1 (instanceRef sram_1_0_3))))
+          (net Din0
+            (joined
+              (portRef (member Din 15))
+              (portRef DI0 (instanceRef sram_1_0_3))))))))
+  (design Memory_Shift
+    (cellRef Memory_Shift
+      (libraryRef ORCLIB)))
+)

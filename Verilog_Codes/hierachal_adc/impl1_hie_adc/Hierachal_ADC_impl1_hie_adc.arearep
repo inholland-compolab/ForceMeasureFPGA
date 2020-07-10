@@ -1,0 +1,10 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  0 of 7485 (0.000%)
+I/O cells:      7
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                GSR         1          100.0
+                                 IB         1          100.0
+                                 OB         6          100.0
+                              TOTAL         8

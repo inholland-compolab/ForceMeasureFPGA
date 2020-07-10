@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="clocky" module="PLL" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2019 12 17 11:15:51.119" version="5.8" type="Module" synthesis="lse" source_format="Verilog">
+  <Package>
+		<File name="clocky.lpc" type="lpc" modified="2019 12 17 11:15:38.933"/>
+		<File name="clocky.v" type="top_level_verilog" modified="2019 12 17 11:15:39.013"/>
+		<File name="clocky_tmpl.v" type="template_verilog" modified="2019 12 17 11:15:39.019"/>
+  </Package>
+</DiamondModule>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="Hierachal_ADC" device="LCMXO3LF-6900C-6BG256I" default_implementation="impl1_hie_adc">
+    <Options/>
+    <Implementation title="impl1_hie_adc" dir="impl1_hie_adc" description="impl1_hie_adc" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="clocky" top="top"/>
+        <Source name="ADC_top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="top"/>
+        </Source>
+        <Source name="MAX11046_module1.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="MAX11046_module2.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="MAX11046_module3.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="MAX11046_module4.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="Test_bench_modules.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="MAX11046_module5.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Memory_Shift.ipx" type="IPX_Module" type_short="IPX" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="Memory_SDR.ipx" type="IPX_Module" type_short="IPX" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="clocky.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="cgt/cgt.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="gfx/gfx.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="hgjkjhg/hgjkjhg.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="Hierachal_ADC.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="hjkjh/hjkjh.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="ijh/ijh.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="ijn/ijn.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="iop/iop.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="kjh/kjh.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="MAX11046_module5.ldc" type="LSE Design Constraints File" type_short="LDC">
+            <Options/>
+        </Source>
+        <Source name="opnn/opnn.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="plm/plm.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="poiu/poiu.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="tshdsf/tshdsf.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="uhbg/uhbg.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="vbnhj/vbnhj.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="Hierachal_ADC1.sty"/>
+</BaliProject>

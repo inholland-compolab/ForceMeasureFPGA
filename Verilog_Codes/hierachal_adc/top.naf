@@ -1,0 +1,23 @@
+CONVST  o
+CS  o
+RD  o
+number 4[15]  i
+number 4[14]  i
+number 4[13]  i
+number 4[12]  i
+number 4[11]  i
+number 4[10]  i
+number 4[9]  i
+number 4[8]  i
+number 4[7]  i
+number 4[6]  i
+number 4[5]  i
+number 4[4]  i
+number 4[3]  i
+number 4[2]  i
+number 4[1]  i
+number 4[0]  i
+force_n  o
+EOC  i
+WR  o
+SHDN  o

@@ -1,0 +1,26 @@
+SCUBA, Version Diamond (64-bit) 3.11.1.441
+Tue Dec 17 11:15:39 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+    Issued command   : C:\lscc\diamond\3.11_x64\ispfpga\bin\nt64\scuba.exe -w -n clocky -lang verilog -synth lse -arch xo3c00f -type pll -fin 250 -bypassp -phase_cntl STATIC -fb_mode 5 
+    Circuit name     : clocky
+    Module type      : pll
+    Module Version   : 5.7
+    Ports            : 
+	Inputs       : CLKI
+	Outputs      : CLKOP
+    I/O buffer       : not inserted
+    EDIF output      : clocky.edn
+    Verilog output   : clocky.v
+    Verilog template : clocky_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : clocky.srp
+    Element Usage    :
+        EHXPLLJ : 1
+    Estimated Resource Usage:

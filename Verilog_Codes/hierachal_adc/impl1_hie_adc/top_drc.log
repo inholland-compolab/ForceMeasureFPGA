@@ -1,0 +1,48 @@
+Results of NGD DRC are available in top_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'DB[15]' has no load.
+WARNING - synthesis: input pad net 'DB[15]' has no legal load.
+WARNING - synthesis: logical net 'DB[14]' has no load.
+WARNING - synthesis: input pad net 'DB[14]' has no legal load.
+WARNING - synthesis: logical net 'DB[13]' has no load.
+WARNING - synthesis: input pad net 'DB[13]' has no legal load.
+WARNING - synthesis: logical net 'DB[12]' has no load.
+WARNING - synthesis: input pad net 'DB[12]' has no legal load.
+WARNING - synthesis: logical net 'DB[11]' has no load.
+WARNING - synthesis: input pad net 'DB[11]' has no legal load.
+WARNING - synthesis: logical net 'DB[10]' has no load.
+WARNING - synthesis: input pad net 'DB[10]' has no legal load.
+WARNING - synthesis: logical net 'DB[9]' has no load.
+WARNING - synthesis: input pad net 'DB[9]' has no legal load.
+WARNING - synthesis: logical net 'DB[8]' has no load.
+WARNING - synthesis: input pad net 'DB[8]' has no legal load.
+WARNING - synthesis: logical net 'DB[7]' has no load.
+WARNING - synthesis: input pad net 'DB[7]' has no legal load.
+WARNING - synthesis: logical net 'DB[6]' has no load.
+WARNING - synthesis: input pad net 'DB[6]' has no legal load.
+WARNING - synthesis: logical net 'DB[5]' has no load.
+WARNING - synthesis: input pad net 'DB[5]' has no legal load.
+WARNING - synthesis: logical net 'DB[4]' has no load.
+WARNING - synthesis: input pad net 'DB[4]' has no legal load.
+WARNING - synthesis: logical net 'DB[3]' has no load.
+WARNING - synthesis: input pad net 'DB[3]' has no legal load.
+WARNING - synthesis: logical net 'DB[2]' has no load.
+WARNING - synthesis: input pad net 'DB[2]' has no legal load.
+WARNING - synthesis: logical net 'DB[1]' has no load.
+WARNING - synthesis: input pad net 'DB[1]' has no legal load.
+WARNING - synthesis: logical net 'DB[0]' has no load.
+WARNING - synthesis: input pad net 'DB[0]' has no legal load.
+WARNING - synthesis: DRC complete with 32 warnings.
+
+Design Results:
+     11 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file Hierachal_ADC_impl1_hie_adc.ngd.

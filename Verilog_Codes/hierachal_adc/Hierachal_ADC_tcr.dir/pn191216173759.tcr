@@ -1,0 +1,38 @@
+#Start recording tcl command: 12/16/2019 14:10:20
+#Project Location: C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc; Project name: Hierachal_ADC
+prj_project open "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/Hierachal_ADC.ldf"
+prj_run Synthesis -impl impl1_hie_adc
+prj_run Synthesis -impl impl1_hie_adc -forceAll
+prj_run Synthesis -impl impl1_hie_adc -forceAll
+prj_src add "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/MAX11046_module6.v"
+prj_src remove "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/MAX11046_module6.v"
+prj_src add -exclude "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/MAX11046_module5.ldc"
+prj_src enable "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/MAX11046_module5.ldc"
+prj_src add "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/MAX11046_module5.v"
+prj_run Synthesis -impl impl1_hie_adc
+prj_src exclude "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/MAX11046_module3.v"
+prj_run Synthesis -impl impl1_hie_adc
+prj_run Synthesis -impl impl1_hie_adc
+prj_run Synthesis -impl impl1_hie_adc
+prj_run Synthesis -impl impl1_hie_adc
+prj_run Synthesis -impl impl1_hie_adc -forceAll
+prj_run Synthesis -impl impl1_hie_adc
+prj_run Synthesis -impl impl1_hie_adc -forceAll
+prj_run Synthesis -impl impl1_hie_adc
+prj_run Synthesis -impl impl1_hie_adc
+prj_run Synthesis -impl impl1_hie_adc -forceAll
+prj_run Synthesis -impl impl1_hie_adc -forceAll
+prj_run Synthesis -impl impl1_hie_adc -forceAll
+prj_run Synthesis -impl impl1_hie_adc -forceAll
+prj_run Synthesis -impl impl1_hie_adc -forceAll
+prj_src add "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/clocky.ipx"
+prj_run Synthesis -impl impl1_hie_adc -forceAll
+prj_run Synthesis -impl impl1_hie_adc -forceAll
+prj_run Synthesis -impl impl1_hie_adc -forceAll
+prj_run Synthesis -impl impl1_hie_adc -forceAll
+prj_run Synthesis -impl impl1_hie_adc
+prj_run Synthesis -impl impl1_hie_adc -forceAll
+prj_run Synthesis -impl impl1_hie_adc -forceAll
+prj_src add "C:/Users/Inholland/Desktop/Elwin/Diamond/Projects/hierachal_adc/hjkjh/hjkjh.spf"
+prj_run Synthesis -impl impl1_hie_adc -forceAll
+#Stop recording: 12/16/2019 17:37:59

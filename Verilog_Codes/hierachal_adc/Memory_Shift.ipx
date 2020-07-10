@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="Memory_Shift" module="RAM_Based_Shift_Register" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2019 12 16 11:50:07.999" version="5.2" type="Module" synthesis="lse" source_format="Verilog">
+  <Package>
+		<File name="" type="" modified="2019 12 16 11:50:07.851"/>
+		<File name="Memory_Shift.lpc" type="lpc" modified="2019 12 16 11:50:06.172"/>
+		<File name="Memory_Shift.v" type="top_level_verilog" modified="2019 12 16 11:50:06.253"/>
+		<File name="Memory_Shift_tmpl.v" type="template_verilog" modified="2019 12 16 11:50:06.261"/>
+		<File name="tb_Memory_Shift_tmpl.v" type="testbench_verilog" modified="2019 12 16 11:50:06.276"/>
+  </Package>
+</DiamondModule>
