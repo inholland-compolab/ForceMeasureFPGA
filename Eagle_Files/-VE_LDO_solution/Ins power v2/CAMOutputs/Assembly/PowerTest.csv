@@ -1,0 +1,15 @@
+Qty;Designator ;Footprint;Comment
+2;INPUT_HEADER, JP2;2X10;PIN HEADER
+1;R2;RESC2012X65;Resistor Fixed - Generic
+3;R3, R4, R9;RTRIM3296Y;Trimm resistor
+3;C9, C14, C25;C1210;CAPACITOR, European symbol
+1;R1;RESC2012X65;Resistor Fixed - Generic
+1;C1;C1210;CAPACITOR, European symbol
+6;C11, C12, C16, C17, C33, C34;C1210;CAPACITOR, European symbol
+2;C4, C6;C1210;CAPACITOR, European symbol
+2;CR2, CR3;DO-41;
+8;C3, C5, C8, C10, C13, C15, C19, C40;C1210;CAPACITOR, European symbol
+2;C7, C55;C1210;CAPACITOR, European symbol
+3;U3, U4, U11;SO-G16G6.9;
+1;U1;RGW0020A;
+1;U2;RGW0020A;
